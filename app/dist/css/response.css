@@ -1,0 +1,103 @@
+@media screen and (max-width: 1000px) {
+  body {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  body section {
+    width: 90%;
+    padding: 0px 5%;
+  }
+  body section.about-section,
+body section.services-section {
+    padding: 30px 5%;
+  }
+  footer.footer .footer-items {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 824px) {
+  body {
+    width: 100%;
+    background: #000;
+  }
+  body nav.navigator {
+    position: relative;
+  }
+  body nav.navigator ul.nav-links {
+    width: 90%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 5%;
+    position: absolute;
+    background: #050505;
+    bottom: 100%;
+    right: 0;
+    z-index: 1;
+  }
+  body nav.navigator ul.nav-links li a {
+    padding: 10px 0;
+  }
+  body section {
+    width: 90%;
+    padding: 0px 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  body section .content {
+    width: 100%;
+    min-width: 100%;
+  }
+  body section .content:last-child {
+    width: 100%;
+  }
+  body section .content .input-wrapper {
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    place-items: center;
+    position: relative;
+  }
+  body section .content .input-wrapper input.mail-input {
+    width: 100%;
+  }
+  body section .content .card-container {
+    width: 100%;
+  }
+  body section .content .card-container .flex-items {
+    width: 100%;
+  }
+  body section .content .card-container .flex-items .item p.fs-24 {
+    font-size: 20px;
+  }
+  body section .content .card-container .flex-items .item p.fs-13 {
+    font-size: 10px;
+  }
+  body section.about-section,
+body section.services-section {
+    padding: 30px 5%;
+    flex-direction: column;
+  }
+  body section.about-section .flex-items,
+body section.services-section .flex-items {
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    gap: 30px;
+  }
+  body section.about-section .flex-items .content:last-child,
+body section.services-section .flex-items .content:last-child {
+    margin-top: 30px;
+  }
+  body section.about-section .flex-items .plan-cardbox,
+body section.services-section .flex-items .plan-cardbox {
+    width: 80%;
+  }
+  footer.footer .footer-items {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}/*# sourceMappingURL=response.css.map */
