@@ -78,6 +78,7 @@ body section.services-section {
   }
   body section.about-section,
 body section.services-section {
+    width: 90%;
     padding: 30px 5%;
     flex-direction: column;
   }
@@ -99,5 +100,24 @@ body section.services-section .flex-items .plan-cardbox {
   footer.footer .footer-items {
     flex-wrap: wrap;
     gap: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+  body section {
+    width: 90%;
+    padding: 0px 5%;
+  }
+  body section .content {
+    width: 100%;
+  }
+  body section .content:last-child {
+    display: none;
+  }
+  body section .content h1 {
+    font-size: 32px;
+    font-weight: 600;
   }
 }/*# sourceMappingURL=response.css.map */

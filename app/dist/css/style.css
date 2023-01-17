@@ -22,9 +22,9 @@
 }
 
 button.btn {
-  background: #fff;
+  background: #e04024;
   border-radius: 30px;
-  color: #050505;
+  color: #fff;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
@@ -260,6 +260,10 @@ body section.services-section .flex-items .plan-cardbox {
 body section.services-section .flex-items .plan-cardbox:nth-child(2) {
   background: linear-gradient(45deg, #e04024 60%, #ff7300);
 }
+body section.services-section .flex-items .plan-cardbox:nth-child(2) button {
+  background: #fff;
+  color: #050505;
+}
 body section.services-section .flex-items .plan-cardbox:nth-child(2) p.fs-13 {
   color: #fff;
 }
@@ -293,6 +297,10 @@ body footer.footer .footer-items ul.footer-links {
   flex-direction: column;
   gap: 8px;
 }
+body footer.footer .footer-items ul.footer-links p {
+  font-weight: 500;
+  color: #fff;
+}
 body footer.footer .footer-items ul.footer-links li a {
   font-size: 14px;
   color: #999;
@@ -303,8 +311,13 @@ body footer.footer .footer-items .newsletter-container {
   flex-direction: column;
   gap: 8px;
 }
+body footer.footer .footer-items .newsletter-container p {
+  font-weight: 500;
+  color: #fff;
+}
 body footer.footer .footer-items .newsletter-container p.para {
   font-size: 14px;
+  font-weight: 400;
   color: #999;
 }
 body footer.footer .footer-items .newsletter-container .input-wrapper {
@@ -336,4 +349,15 @@ body footer.footer .bottom-section {
   border-top: 1px solid rgba(255, 255, 255, 0.0666666667);
   padding-top: 20px;
   margin-top: 30px;
+}
+body footer.footer .bottom-section p {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  gap: 10px;
+  color: #999;
+}
+body footer.footer .bottom-section p a {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

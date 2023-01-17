@@ -1,0 +1,307 @@
+$accent: #e04024
+$compliment: #ff7300
+$white: #fff
+$light: #eee
+$grey: #999
+$dim: #131313
+$dark: #050505
+// mixes
+$mix1: linear-gradient(45deg, $accent 60%, $compliment)
+
+
+*
+   font-family: Poppins
+   margin: 0
+   padding: 0
+   border: none
+   outline: none
+   list-style: none
+   text-decoration: none
+
+
+// DEFAULTS
+::-webkit-scrollbar
+   width: 5px
+::-webkit-scrollbar-track
+   margin: 30px 0
+::-webkit-scrollbar-thumb
+   background: $mix1
+   border-radius: 10px
+
+
+
+button.btn
+   background: $accent
+   border-radius: 30px
+   color: $white
+   cursor: pointer
+   font-size: 14px
+   font-weight: 500
+   padding: 8px 30px
+   transition: .3s
+   &:active
+      transform: scale(.95)
+
+
+p.fs-13, p.fs-15, p.fs-20, p.fs-24
+   font-size: 15px
+   font-weight: 400
+   color: $white
+p.fs-24
+   font-size: 24px
+p.fs-15
+   color: $grey
+   line-height: 28px
+p.fs-13
+   font-size: 13px
+
+
+
+
+
+
+body
+   width: 100%
+   height: 100vh
+   background: $dark
+   nav.navigator
+      width: calc( 100% - 10% )
+      padding: 10px 5%
+      display: flex
+      place-items: center
+      justify-content: space-between
+      // background: $dim
+      // position: fixed
+      z-index: 10
+      .nav-brand
+         width: max-content
+         h1
+            font-size: 22px
+            font-weight: 600
+            color: $white
+            span
+               color: $accent
+               font-weight: 300
+      ul.nav-links
+         width: max-content
+         display: flex
+         gap: 30px
+         li a
+            font-size: 15px
+            color: $white
+            transition: .3s
+            &:hover
+               color: $accent
+      button.btn
+         background: #fff
+         color: $dark
+         font-size: 14px
+         font-weight: 500
+         padding: 8px 30px
+         border-radius: 30px
+   section.hero-section
+      width: 80%
+      padding: 0 10%
+      display: flex
+      flex-wrap: wrap
+      .content
+         width: 60%
+         margin-top: 100px
+         &:last-child
+            width: 40%
+            background: url('../res/img/pexels-anush-gorak-1431282.jpg')
+            // background-blend-mode: overlay
+            background-size: cover
+            background-position: bottom
+            position: relative
+            &::before
+               content: ''
+               width: 100%
+               height: 100%
+               background: radial-gradient(#0000, #0009 30%, $dark)
+               position: absolute
+               left: 0
+               top: 0
+         h1
+            font-size: 48px
+            font-weight: 600
+            color: $white
+            span
+               background: $mix1
+               background-clip: text
+               -webkit-text-fill-color: none
+               color: transparent
+         .input-wrapper
+            width: 55%
+            display: flex
+            place-items: center
+            position: relative
+            input.mail-input
+               width: calc( 100% - 40px )
+               background: #fff
+               border-radius: 30px
+               font-size: 14px
+               font-weight: 500
+               padding: 14px 20px
+            button
+               background: $mix1
+               padding: 14px 30px
+               position: absolute
+               right: 0
+         .card-container
+            width: max-content
+            background: url('../res/img/cardbg.jpg') #000e
+            background-blend-mode: overlay
+            background-size: 100%
+            background-repeat: no-repeat
+            border-radius: 15px
+            margin-top: 100px
+            .flex-items
+               width: max-content
+               background: #fff2
+               backdrop-filter: blur(2px)
+               border-radius: 15px
+               display: flex
+               place-items: center
+               gap: 20px
+               padding: 10px 20px
+               .item
+                  width: calc( 100% / 3 - 18px  )
+                  width: max-content
+               hr
+                  width: 2px
+                  height: 50px
+                  background: #fff3
+   section.about-section
+      width: 80%
+      background: #000
+      padding: 30px 10%
+      margin-top: 100px
+      .flex-items
+         width: 100%
+         display: flex
+         justify-content: space-between
+         .content
+            width: calc( 50% - 25px )
+            &:first-child
+               display: flex
+               flex-wrap: wrap
+               gap: 20px
+               img
+                  width: calc( 50% - 10px )
+                  border-radius: 15px
+                  &:nth-child(3),
+                  &:nth-child(4),
+                  &:nth-child(5)
+                     width: calc( 100% / 3 - 14px )
+            &:last-child
+               width: calc( 50% - 25px )
+               a
+                  font-size: 14px
+                  font-weight: 500
+                  color: $accent
+                  text-decoration: underline
+   section.services-section
+      width: 80%
+      padding: 30px 10%
+      margin-top: 100px
+      h2
+         font-size: 32px
+         font-weight: 600
+         color: $white
+         text-align: center
+      .flex-items
+         width: 100%
+         display: flex
+         justify-content: space-between
+         margin-top: 50px
+         .plan-cardbox
+            width: calc( 100% / 3 - 100px )
+            padding: 20px 30px
+            background: linear-gradient(45deg, #ffffff08, #9991, #ccc1, #ffffff05)
+            border-radius: 15px
+            box-shadow: 0 1px 8px #000
+            text-align: center
+            &:nth-child(2)
+               background: $mix1
+               button
+                  background: #fff
+                  color: $dark
+               p.fs-13
+                  color: $white
+            &:nth-child(1),
+            &:nth-child(3)
+               p.fs-13
+                  color: $grey
+            ul.flow-list
+               width: 100%
+               display: flex
+               flex-direction: column
+               li
+                  padding: 10px 0
+   footer.footer
+      width: 90%
+      background: #fff1
+      padding: 30px 5%
+      margin-top: 100px
+      .footer-items
+         width: 100%
+         display: flex
+         justify-content: space-between
+         ul.footer-links
+            width: max-content
+            display: flex
+            flex-direction: column
+            gap: 8px
+            p
+               font-weight: 500
+               color: $white
+            li a
+               font-size: 14px
+               color: $grey
+         .newsletter-container
+            width: 320px
+            display: flex
+            flex-direction: column
+            gap: 8px
+            p
+               font-weight: 500
+               color: $white
+            p.para
+               font-size: 14px
+               font-weight: 400
+               color: $grey
+            .input-wrapper
+               width: 100%
+               display: flex
+               place-items: center
+               position: relative
+               margin-top: 20px
+               input.mail-input
+                  width: calc( 100% - 40px )
+                  background: #fff
+                  border-radius: 30px
+                  font-size: 14px
+                  font-weight: 500
+                  padding: 14px 20px
+               button
+                  background: $mix1
+                  color: $white
+                  font-size: 20px
+                  padding: 10.5px 20px 8.5px 20px
+                  position: absolute
+                  right: -.5px
+      .bottom-section
+         width: 100%
+         text-align: center
+         border-top: 1px solid #fff1
+         padding-top: 20px
+         margin-top: 30px
+         p
+            width: max-content
+            display: flex
+            gap: 10px
+            color: $grey
+            a
+               color: $white
+
